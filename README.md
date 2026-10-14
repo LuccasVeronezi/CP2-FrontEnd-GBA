@@ -13,3 +13,12 @@ Checkpoint integrado entre as disciplinas de Front-end e Governança em IA.
 O projeto é dividido em duas camadas:
 1. **Back-end (FastAPI):** Expõe os endpoints de leitura atual, histórico e observabilidade do provider de Sensores. Possui um middleware que intercepta as requisições, calculando a latência e registrando os headers de contexto (`X-Session-Id` e `X-Feature`).
 2. **Front-end (Streamlit):** Interface gráfica que consome a API utilizando a biblioteca `requests`, enviando os metadados de governança em todas as interações.
+## Como rodar localmente
+### Pré-requisitos
+Ter o Python instalado na máquina.
+
+### Instalação
+1. Clone o repositório: `git clone [URL_DO_SEU_REPO]`
+2. Instale as dependências:
+   ```bash
+   pip install fastapi uvicorn requests streamlit pandas
